@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/model/constant.dart';
-import 'package:shop_app/screen.dart/home_page.dart';
+import 'package:shop_app/screen/auth/auth_phone.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomePage(),
+      home: const PhoneAuthScreen(),
     );
   }
 }
